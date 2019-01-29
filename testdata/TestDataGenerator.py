@@ -1,13 +1,13 @@
 
 # coding: utf-8
 
-# In[130]:
+# In[27]:
 
 
 import numpy as np
 
 
-# In[131]:
+# In[28]:
 
 
 def generateDataPoints(count, dimensions, coordSize):
@@ -15,7 +15,7 @@ def generateDataPoints(count, dimensions, coordSize):
     return datapoints
 
 
-# In[132]:
+# In[29]:
 
 
 def generateIO(dataCount, sensorCount, dimensions, coordSize):
@@ -31,11 +31,12 @@ def generateIO(dataCount, sensorCount, dimensions, coordSize):
             distance.append(np.linalg.norm(distancevector[j]))
         
         distances.append(distance)
-    
+        
+    distances = np.array(distances)
     return distances, datapoints
 
 
-# In[133]:
+# In[30]:
 
 
 def generateStatic4PointIO(dataCount, dimensions, coordSize):
@@ -51,13 +52,6 @@ def generateStatic4PointIO(dataCount, dimensions, coordSize):
             distance.append(np.linalg.norm(distancevector[j]))
         
         distances.append(distance)
-    
+    distances = np.array(distances)
     return distances, datapoints
-
-
-# In[ ]:
-
-
-
-
 
