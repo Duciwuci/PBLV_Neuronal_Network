@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import sys
-sys.exit(0)
 try:
     runarg_idx = sys.argv.index('--rundir')
     rundir = sys.argv[runarg_idx+1]
@@ -70,4 +69,4 @@ for sheet in sheets:
 if 'signature' in json_in.metadata:
     json_in.metadata['signature'] = ""
 
-#write(json_in, sys.stdout, version)
+write(json_in, sys.stdout, version)
