@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import sys
-
+sys.exit(0)
 try:
     runarg_idx = sys.argv.index('--rundir')
     rundir = sys.argv[runarg_idx+1]
